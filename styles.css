@@ -64,6 +64,10 @@ h1 {
 
 /* Gallery Card */
 .gallery-card {
+
+}
+
+.gallery-card .image-container {
     position: relative;
     overflow: hidden;
 }
@@ -74,6 +78,7 @@ h1 {
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .gallery-card:hover img {
@@ -85,7 +90,7 @@ h1 {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;

@@ -40,9 +40,11 @@ function renderGallery(items) {
         const card = document.createElement('div');
         card.className = 'gallery-card';
         card.innerHTML = `
-            <img src="${item.src}" alt="${item.title}">
-            <div class="card-overlay">
-                <span>View</span>
+            <div class="image-container">
+                <img src="${item.src}" alt="${item.title}">
+                <div class="card-overlay">
+                    <span>View</span>
+                </div>
             </div>
             <h3>${item.title}</h3>
             <p class="description">${item.description}</p>
