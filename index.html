@@ -1,54 +1,16 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Wonjae's Midjourney Gallery</title>
-    </head>
-    <body>
-        <main>
-            <h1>Hi! I'm Wonjae from S.Korea</h1>
-            <p class="bio">Product designer looking to become a design engineer</p>
-        </main>
-
-        <!-- Filter Buttons -->
-        <section class="filters">
-            <button class="filter-btn active" data-category="all">All</button>
-            <button class="filter-btn" data-category="surrealism">Surrealism</button>
-            <button class="filter-btn" data-category="high-angle">High Angle</button>
-            <button class="filter-btn" data-category="painterly">Painterly</button>
-        </section>
-
-        <!-- Gallery Grid -->
-        <section class="gallery" id="gallery">
-            <!-- Gallery items will be rendered by JavaScript -->
-        </section>
-
-        <!-- Lightbox Modal -->
-        <div class="lightbox" id="lightbox">
-            <button class="lightbox-close" id="lightbox-close">&times;</button>
-            <img src="" alt="" id="lightbox-img">
-            <div class="lightbox-caption">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-description"></p>
-            </div>
-        </div>
-
-        <!-- Footer Section -->
-        <section class="footer-section">
-            <p>If you are curious to learn more about my work, please check out <a href="https://www.linkedin.com/feed/" target="_blank">this link</a>.</p>
-
-            <form class="feedback-form" id="feedback-form">
-                <label for="feedback">Feedback please!</label>
-                <div class="form-row">
-                    <input type="text" placeholder="type your feedback" id="feedback" name="feedback" required>
-                    <button type="submit">Submit</button>
-                </div>
-                <p class="form-message" id="form-message"></p>
-            </form>
-        </section>
-
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lattisework – Midjourney Visual Glossary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
