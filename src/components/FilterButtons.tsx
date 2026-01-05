@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import type { Category } from '../types'
 
 interface FilterButtonsProps {
@@ -17,12 +16,7 @@ export function FilterButtons({ categories, activeCategory, onCategoryChange }: 
   }
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.1 }}
-      className="flex flex-wrap gap-2.5 mb-8"
-    >
+    <section className="flex flex-wrap gap-2.5 mb-8">
       {categories.map((category) => (
         <button
           key={category}
@@ -39,7 +33,7 @@ export function FilterButtons({ categories, activeCategory, onCategoryChange }: 
           {formatLabel(category)}
         </button>
       ))}
-    </motion.section>
+    </section>
   )
 }
 

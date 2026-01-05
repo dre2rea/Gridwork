@@ -1,5 +1,4 @@
 import { useState, type FormEvent } from 'react'
-import { motion } from 'framer-motion'
 
 export function Footer() {
   const [feedback, setFeedback] = useState('')
@@ -22,12 +21,7 @@ export function Footer() {
   }
 
   return (
-    <motion.footer
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.3 }}
-      className="mt-10 pt-5 border-t border-border"
-    >
+    <footer className="mt-10 pt-5 border-t border-border">
       <p>
         If you are curious to learn more about my work, please check out{' '}
         <a
@@ -72,7 +66,7 @@ export function Footer() {
           </p>
         )}
       </form>
-    </motion.footer>
+    </footer>
   )
 }
 

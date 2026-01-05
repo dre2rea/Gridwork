@@ -1,4 +1,4 @@
-# Gridwork Git Workflow Cheatsheet
+# Git Workflow Cheatsheet
 
 A reference guide for practicing Git/GitHub workflows.
 
