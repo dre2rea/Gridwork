@@ -12,7 +12,7 @@ export function GalleryCard({ item, onClick, index }: GalleryCardProps) {
 
   return (
     <motion.article
-      layout
+      layout="position"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.9 }}
