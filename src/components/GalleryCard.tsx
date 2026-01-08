@@ -33,7 +33,7 @@ export function GalleryCard({ item, onClick, index }: GalleryCardProps) {
         </div>
       </div>
       <h3 className="italic mt-3 text-base font-medium">{item.title}</h3>
-      <p className="text-sm mt-1.5 text-muted">{item.description}</p>
+      <p className="text-sm mt-1.5 text-muted lg:min-h-[3.5rem]">{item.description}</p>
       <span className="inline-block text-[11px] uppercase text-subtle mt-2 tracking-wide">
         {formatCategory(item.category)}
       </span>
